@@ -150,6 +150,61 @@ h1 {
     background-color: #DA5D69;
 }
 
+.message {
+    display: flex;
+}
+
+.message-image {
+    width: 50%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: round;
+}
+
+.message .error {
+    background-image: url("https://static-images.ifood.com.br/image/upload/t_high,q_100/webapp/404/somehing-went-wrong-alt.svg");
+}
+
+.message .success {
+    background-image: url("https://parceiros.ifood.com.br/static/media/customer-with-bag.c1c47486.svg");
+}
+
+.message-text {
+    padding: 0% 0% 0% 5%;
+    width: 50%;
+}
+
+.message-text button {
+    width: 224px;
+    height: 60px;
+    background: #ea1d2c;
+    cursor: pointer;
+    border-radius: 5px;
+    border-color: transparent;
+}
+
+.message-text button a {
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: -1px;
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.message-text .text {
+    font-size: 1.625rem;
+    line-height: 35px;
+    text-align: left;
+}
+
+.message-text .title {
+    font-weight: 500;
+    width: 100%;
+    font-size: 4.375rem;
+    line-height: 70px;
+    color: #3e3e3e;
+}
+
 @media (max-width: 1180px) {
     .section {
         padding: 0% 10%;
@@ -163,6 +218,15 @@ h1 {
 }
 
 @media (max-width: 770px) {
+    .message {
+        flex-direction: column;
+    }
+    .message .message-text {
+        width: 100%;
+    }
+    .message .message-image {
+        width: 100%;
+    }
     .section {
         flex-direction: column;
         padding: 10% 2%;
